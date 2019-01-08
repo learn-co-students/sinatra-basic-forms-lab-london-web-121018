@@ -1,3 +1,12 @@
 <h1> Welcome to the puppy adoption site!</h1>
 
-<a href="/new">Click Here To List A Puppy</a>
+<a href="/new">List a Puppy</a>
+
+    <p>Puppy list:</p>
+    <ul> 
+    <% @puppies.each do |pu| %> 
+                <li><%= pu.name %> </li>
+                <li><%= pu.breed %> </li>
+                <li><%= pu.age %> </li>
+               <% end %>                
+    </ul>
